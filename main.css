@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+*::after
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 1024px;
+    margin: auto;
+    font-family: "Poppins", serif;
+}
+ 
+/* body {
+    max-width: 1200px; 
+    width: 90%; 
+    margin: auto;
+    font-family: "Poppins", serif;                               2th option but it need some changes
+} */
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #0953ff;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.row > * {                 /* * mean any element */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.span3 {
+    width: 25%;
+}
+
+.span4 {
+    width: 33.33%;
+}
+
+.span6 {
+    width: 50%;
+}
+
+.btn {
+    border: 1px solid #0953ff;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 2px;
+    /* background-color: rgb(84, 125, 247); */
+}
+
+.btn-primary {
+    background-color: rgb(84, 125, 247);
+    color: white;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #002F6C;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.section-title p {
+    width: 60%;
+    margin: auto;                                     /* margin-left: 20%;             this is the same result with margin: auto         */
+}
+
+.section-button {
+    float: right;
+    margin-top: 60px;
+
+}
+
+/*header rules*/
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 25%;
+    /* display: inline-block; */
+}
+
+.login {
+    width: 25%;
+    margin-right: 62px; 
+    /* display: inline-block; */
+}
+
+.login a {
+    display: block;
+    width: 100%;
+    margin: 1% 0;
+}
+
+.menu {
+    width: 50%;
+    /* display: inline-block; */
+}
+
+#logo-image{
+    height: 120px;
+    width: 160px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/*intro section*/
+
+#intro {
+    background-image: url('../images/intro\ image.JPG');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+}
+
+.intro-text h1 {
+    font-size: 64px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(50, 50, 50);
+}
+
+#searchTerm {
+    padding: 10px 20px;
+    border-style: none;
+    outline: none;
+    flex: 1;
+}
+
+.form {
+    background-color: white;
+    padding: 10px ;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form:focus-within {
+    border: 1px solid #477eff;
+}
+
+.form button {
+    width: 25%;
+}
+
+.intro-image-parent {
+    position: relative;
+}
+
+.intro-image {
+    position: relative;
+    top: 0  px;
+    right: -80px;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -18px;
+}
+
+/*stat section*/
+
+#stat {
+    margin-top: -30px;
+    position: relative;
+}
+
+.stat-item {
+    background-color: rgb(250, 251, 253);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 7px 12px 17px rgb(109, 109, 109, 0.4);
+    border: 1px solid #ddd;
+}
+
+.stat-item p {
+    color: rgb(50, 50, 50);
+    font-size: 13px;
+} 
+
+.stat-icon {
+    background-color: #e9efff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left; 
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px !important;
+    margin-right: 15px;
+    margin-top: 7px;
+    position: relative;
+    top: -1px;
+}
+
+.stat-count {
+    font-weight: bolder;
+}
+
+/*about section rules*/
+
+#about {
+    background-color: #002F6C;
+    padding: 80PX 0.75rem;
+    color: white;
+    margin-top: -20px;
+}
+
+.about-item {
+    background-color: white;
+    box-shadow: 7px 12px 17px rgb(109, 109, 109, 0.4);
+    color: #000000;
+    padding: 30px;
+}
+
+.about-item span {
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    background-color: #002F6C;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.about-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*courses rules*/
+
+#courses {
+    background-color: rgb(249, 249, 249);
+    padding: 80px 0;
+}
+
+#courses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.course {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.course h2 {
+    color: #333;
+}
+
+.course-name:hover {
+    font-size: 19px;
+}
+
+.course p {
+    color: #666;
+}
+
+.course a {
+    text-decoration: none;
+    color: blue;
+}
+
+.course-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 12px 17px rgb(109, 109, 109, 0.4);
+    margin-bottom: 15px;
+}
+
+.course-image {
+    position: relative;
+}
+
+.course-image img {
+    width: 100%;
+}
+
+.course-image span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    background-color: rgb(84, 125, 247);
+    padding: 2px 5px;
+    border: 1px none rgb(84, 125, 247);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.course-image span:hover {
+    background-color: #002F6C;
+}
+
+.course-item h3 {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.course-info {
+    text-align: center;
+}
+
+.course-info p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.course-info p span {
+    color: #0953ff;
+}
+
+.course-price {
+    border-top: 1px solid #ccc;
+    color: #0953ff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.course-item:hover .course-price {
+    color: #002F6C;
+}
+
+/*footer rules*/
+
+#footer {
+    background-color: #002F6C;
+    color: white;
+    padding: 80px 0;
+}
+
+#footer img {
+    height: 120px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+#footer p {
+    margin-bottom: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer .social-media ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#footer .social-media a {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+}
+
+#footer h3 {
+    margin-bottom: 20px;
+}
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+
+.useful-links {
+    color: white;
+}
+
+#footer .contact-info span{
+    font-size: 20px;
+    margin-bottom: 20px ;
+    display: inline;
+    position: relative;
+    top: 3px;
+    margin-right: 15px;
+}
+
+#footer .contact-info p {
+    display: inline-block;
+    margin-bottom: 20px ;    
+}
